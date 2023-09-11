@@ -350,7 +350,7 @@ EOF
 
 
 generate_config
-
+generate_argo
 generate_pm2_file
 
 
