@@ -348,10 +348,10 @@ EOF
 EOF
 }
 
-check_argo
+
 generate_config
-generate_argo
+
 generate_pm2_file
 
-[ -e /tmp/argo.sh ] && bash /tmp/argo.sh
+
 [ -e /tmp/ecosystem.config.js ] && pm2 start /tmp/ecosystem.config.js
