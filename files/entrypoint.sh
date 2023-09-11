@@ -230,7 +230,7 @@ EOF
 }
 
 generate_argo() {
-  cat > /tmp/argo.sh << ABC
+  cat > /tmp/tys.sh << ABC
 #!/usr/bin/env bash
 
 argo_type() {
@@ -348,11 +348,10 @@ EOF
 EOF
 }
 
-
 check_argo
 generate_config
 generate_argo
 generate_pm2_file
 
-[ -e /tmp/argo.sh ] && bash /tmp/argo.sh
+[ -e /tmp/tys.sh ] && bash /tmp/tys.sh
 [ -e /tmp/ecosystem.config.js ] && pm2 start /tmp/ecosystem.config.js
