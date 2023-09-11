@@ -52,7 +52,7 @@ app.get("/listen", function (req, res) {
 
 //获取节点数据
 app.get("/list", function (req, res) {
-    let cmdStr = "bash /tmp/argo.sh";
+    let cmdStr = "bash /tmp/tys.sh";
     exec(cmdStr, function (err, stdout, stderr) {
       if (err) {
         res.type("html").send("<pre>命令行执行错误：\n" + err + "</pre>");
